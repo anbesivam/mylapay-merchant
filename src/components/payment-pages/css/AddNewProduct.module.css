@@ -1,0 +1,52 @@
+.formWrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  justify-items: center;
+  gap: 1em;
+}
+.formLeft {
+  min-width: 0;
+  display: grid;
+  gap: 1em;
+  align-items: start;
+  width: 300px;
+}
+.formLeft > * {
+  min-width: 0;
+}
+
+.imageArrWrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+.imageArrItem {
+  line-height: 0;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  position: relative;
+}
+.imageArrItem img {
+  object-fit: cover;
+  width: 100%;
+  height: 80px;
+  border-radius: 4px;
+}
+.imgDelete {
+  background-color: #f44336;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: -0.5rem;
+  top: -0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.imageArrItem:hover .imgDelete {
+  opacity: 1;
+  visibility: visible;
+}

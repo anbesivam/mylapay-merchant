@@ -1,0 +1,63 @@
+.stat_cards_wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+.stat_card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1em;
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* Colors */
+.gradient_blue {
+  background: linear-gradient(45deg, #0288d1, #26c6da);
+}
+.gradient_pink {
+  background: linear-gradient(45deg, #ff5252, #f48fb1);
+}
+.gradient_orange {
+  background: linear-gradient(45deg, #ff6f00, #ffca28);
+}
+.gradient_green {
+  background: linear-gradient(45deg, #43a047, #1de9b6);
+}
+
+.icon_sec {
+  display: flex;
+  flex-direction: column;
+  align-items: flex_start;
+}
+.material_icons {
+  font-size: 1.8em;
+  font-weight: normal;
+  line-height: 1;
+  background: rgba(0, 0, 0, 0.18);
+  border-radius: 999px;
+  height: 1.6em;
+  width: 1.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon_sec p {
+  font-size: 1.1em;
+  margin: 1em 0 0 0;
+}
+.stat_sec {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+.stat_sec h5 {
+  margin: 0;
+  font-size: 1.5em;
+}
+.stat_sec p {
+  margin: 0;
+}
+.stat_sec p:last-child {
+  margin-top: auto;
+}

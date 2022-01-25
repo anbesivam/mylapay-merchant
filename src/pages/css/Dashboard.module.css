@@ -1,0 +1,6 @@
+.chart_row {
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  gap: 1em;
+  margin-top: 1em;
+}

@@ -1,0 +1,22 @@
+.actionWrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5em;
+  width: min-content;
+  margin-left: auto;
+}
+.actEdit {
+  background: var(--mp-light-blue);
+  color: #fff;
+  min-width: 50px;
+}
+.actDel {
+  background: #f44336;
+  color: #fff;
+  min-width: 50px;
+}
+.prdImg {
+  border-radius: 4px;
+  overflow: hidden;
+  object-fit: cover;
+}

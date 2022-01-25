@@ -1,0 +1,86 @@
+.accWrap {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+.accLinksWrap {
+  display: grid;
+  gap: 1em;
+  align-self: start;
+}
+.accLink {
+  background: var(--mp-light-blue);
+  color: #fff;
+  padding: 1em;
+  font-size: 0.9em;
+  font-weight: 600;
+  cursor: pointer;
+  width: calc(100% - 1em);
+}
+.active {
+  width: 100%;
+  color: #000;
+  background: #fff;
+  cursor: initial;
+  pointer-events: none;
+}
+.accContentWrap {
+  background: #fff;
+  padding: 2em;
+}
+.accContent {
+  display: none;
+}
+.accActive {
+  display: block;
+}
+.accToolTip {
+  background: #f3f2f3;
+  color: #808080;
+  padding: 1em;
+  font-size: 0.9em;
+  border-radius: 1em;
+  position: relative;
+  margin-bottom: 2em;
+}
+.accToolTip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 1.5em;
+  width: 0;
+  height: 0;
+  border-top: solid 10px #f3f2f3;
+  border-left: solid 10px transparent;
+  border-right: solid 10px transparent;
+}
+
+.accToolTipTop {
+  /* background: #f3f2f3; */
+  color: #808080;
+  padding: 1em;
+  font-size: 0.9em;
+  border-radius: 1em;
+  position: relative;
+  margin-bottom: 2em;
+}
+
+/* .accToolTipTop::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 5.5em;
+  top: -0.5em;
+  transform: rotateZ(180deg);
+  width: 0;
+  height: 0;
+  border-top: solid 10px #f3f2f3;
+  border-left: solid 10px transparent;
+  border-right: solid 10px transparent;
+} */
+.stepCtaWrap {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2em;
+  margin-top: -4em;
+}

@@ -1,0 +1,24 @@
+.topbar {
+  background: #fff;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 4px;
+  display: flex;
+}
+.filterWrap {
+  display: grid;
+  grid-template-columns: 160px 160px 150px;
+  gap: 1em;
+}
+.balanceWrap {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  text-align: right;
+}
+.balAmt {
+  color: #fff;
+  background: var(--mp-light-blue);
+  padding: 0 0.5em 0 3em;
+  margin-left: 1em;
+}

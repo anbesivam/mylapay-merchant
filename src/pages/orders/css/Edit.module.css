@@ -1,0 +1,71 @@
+.stepWrap {
+  display: flex;
+}
+
+.stepWrapredirect{
+  display: flex;
+  color: #fff;
+  background-color: #20295C;
+  height: 72px !important;
+}
+.stepCard {
+  background: #dadad9;
+  color: #fff;
+  margin-right: 1em;
+  padding: 1em;
+  height: 100px;
+  width: 150px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+}
+.active {
+  background: #fff;
+  color: #888;
+  cursor: initial;
+  position: relative;
+}
+.active::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  width: 0;
+  height: 0;
+  border-top: solid 15px #fff;
+  border-left: solid 15px transparent;
+  border-right: solid 15px transparent;
+}
+.stepCtaWrap {
+  margin-left: auto;
+  align-self: flex-end;
+}
+
+.redirectactions{
+  color: inherit;
+  min-height: 72px !important;
+  padding-top: 9px !important;
+  min-width: 130px !important;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 9px !important;
+  opacity: 0.7 !important;
+}
+
+.redirectactions_usermanual{
+  color: inherit;
+  min-height: 72px !important;
+  padding-top: 9px !important;
+  min-width: 48px !important;
+  text-align: center;
+  margin-left: 185px !important;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 9px !important;
+  opacity: 0.7 !important;
+}
